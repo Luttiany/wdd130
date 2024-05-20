@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-    --primary-color: #13252e;
+*{
+    text-decoration: none;
+}
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+}
+
+:root{
+    --primary-color: #1f099e;
     --secondary-color: #FFFFFF;
     --accent1-color: #F6AE2D;
     --accent2-color: #410DBA;
@@ -15,44 +25,99 @@
     --nav-hover-background-color: #33658A;
 }
 
+div{
+    display: block;
+}
+
+.hero{
+    position: relative;
+}
+
+h1 {
+    width: 400px;
+    padding: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 5px;
+    background-color: rgba(50, 154, 223, 0.5);
+    margin: auto;
+    color: var(--accent1-color);
+    text-align: center;
+    
+}
+article img{
+    float: right;
+}
+
+.hero article {
+    width: 820px;
+    padding: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80px;
+    background-color: rgba(19, 89, 100, 0.7);
+    margin: auto;
+    color: var(--accent1-color);
+    text-align: center;
+}
+
+.hero article img {
+    width: 200px;
+    float: right;
+    padding: 13px;
+   
+}
+.hero img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+   
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+    margin: 1.5rem auto;
 }
 
 p {
     padding: 25px;
+    text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: var(--nav-hover-link-color);
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
 
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .hero div {
-    position: relative;
-  }
-
-  .hero img {
+nav a {
     display: block;
-    width: 100%;
-    height: auto;
-  }
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    
+}
 
-  h1, article {
-    position: absolute;
-  }
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
 
-  article img {
-    float: right;
-  }
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
